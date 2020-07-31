@@ -1,72 +1,128 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<!--HTML5 doctype-->
 <html lang="en">
+
 <head>
- <title>semantic</title>
- <meta charset="UTF-8">
- <style type = "text/css">
- header {
- border-bottom: 5px double black;
- }
- nav {
- float: left;
- width: 20%;
- clear: left;
- min-height: 400px;
- border-right: 1px solid black;
- }
- section {
- float: left;
- width: 75%;
- padding-left: 1em;
- }
- article {
- float: left;
- width: 75%;
- padding-left: 1em;
- }
- footer {
- clear: both;
- border-top: 5px double black;
- text-align: center;
- }
- </style>
+    <meta charset="UTF-8">
+    <title>Semantic tags </title>
 </head>
+
 <body>
- <header>
- <h1>This is my header</h1>
- </header>
- <nav>
- <h2>Navigation</h2>
- <ul>
-  <li><a href="https://www.google.com/search?sxsrf=ALeKk02hx93BWUADjlFVCb-R7dDBBecxEg%3A1596091170204&ei=ImsiX_WPDPuK4-EPkYmQmAU&q=html+page+with+all+semantic+tags&oq=html+page+with+all+semantic+tags&gs_lcp=CgZwc3ktYWIQAzIFCAAQzQIyBQgAEM0CMgUIABDNAjIFCAAQzQI6BAgAEEdQzNY-WN3aPmC03T5oAHADeACAAYEBiAHjA5IBAzAuNJgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwj1qOr5rvTqAhV7xTgGHZEEBFMQ4dUDCAw&uact=5">link a</a></li>
-  <li><a href="https://www.freecodecamp.org/news/semantic-html5-elements/">link b</a></li>
-  <li><a href="https://www.semrush.com/blog/semantic-html5-guide/#header7">link c</a></li>
-  <li><a href="https://www.bitdegree.org/learn/html5-semantic-tags">link d</a></li>
-  <li><a href="https://www.pluralsight.com/guides/semantic-html">link e</a></li>
- </ul>
- </nav>
- <section id = "1">
- <h2>Section 1</h2>
- <p>Section body...</p>
- </section>
- <section id = "2">
- <h2>Section 2</h2>
- <p>Section body...</p>
- </section>
- <article>
- <h2>Article</h2>
- <p>Article body...</p>
- </article>
- <aside>
- <p>this is my aside.</p>
- </aside>
- <footer>
- <h2>Footer</h2>
- <address>
-  pothana pruthvi <br />
-  <a href = "https://pruthvi02.github.io/ncp/">
-  pothana.pruthvi@gmail.com</a>
- </address>
- </footer>
+    
+<!--Our global header-->
+    <header>
+        <h1>Live in Labs</h1>
+        <h2>Table of Contents</h2>
+        
+<!--    Navigation can be on its own or within the header element-->
+        <nav>
+            <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#rp">REACH & PRESENCE</a></li>
+                <li><a href="#jm">JIVAMRITAM</a></li>
+                <li><a href="#logo">Logo</a></li>
+                <li><a href="#ref">References</a></li>
+            </ol>
+        </nav>
+    </header>
+    
+<!--The main content of our page starts here-->
+    <main>
+        
+<!--    Our introduction is within an article element because this content can make sense on its own-->
+        <article>
+            
+            <header id="intro">
+                <h2>Introduction</h2>
+            </header>
+            
+            <p>Live-in-Labs® is a multidisciplinary experiential learning program that breaks classroom and lab barriers by applying learned theory in real-world settings. This credit-based academic program draws on principles of lean research for the development and deployment of sustainable solutions for current challenges faced by rural communities in India. By directly living in rural communities (labs) and co-designing solutions to development challenges, program participants gain first-hand knowledge and know-how of identifying and assessing community needs and subsequently developing and implementing viable solutions through various participatory methods.</p>
+            
+<!--        This is an example of aside. The mark element has also been showcased in the paragraph. -->
+            <aside>
+                <h4>Projects</h4>
+                <p>With over 150 projects in 21 states across India, Live-in-Labs® participants have touched the lives of approximately 60,000 rural residents during the past several years. With participation from over 30 institutions around the world and nearly 50 departments, schools, and centers at Amrita, students and faculty have clocked in a monumental 200,000 + hours in the field working towards sustainable development in rural communities.
+                    <mark>This content uses the aside element.</mark> </p>
+            </aside>
+            
+        </article>
+        
+<!--    Our rp section-->
+        <section>
+            
+            <header id="rp">
+                <h2>REACH & PRESENCE</h2>
+            </header>
+            
+            <p>From Jammu and Sikkim in the North to Kerala and Tamil Nadu in the South, to Rajasthan and Gujarat in the West to Jharkhand and Bihar in the East, the Live-in-Labs® program has implemented projects in our various thematic areas throughout India.</p>
+            
+        </section>
+        
+<!--    Our jm section with smaller headings-->
+        <section>
+            
+            <header id="jm">
+                <h2>JIVAMRITAM</h2>
+                <h4>Keeping up with times</h4>
+            </header>
+            
+            <p>Launched by the President of India, Sri Ram Nath Kovind, on October 8th 2017, the Jivamritam Purified Clean Drinking Water Initiative aims to install drinking water filtration systems in 5,000 villages and provide clean drinking water to over 10 million people throughout India. The Jivamritam project utilizes a community cost-sharing model for the operation and sustainable management of the systems.
+
+Amrita faculty and students are currently working to deploy the Jivamritam water filtration systems through the Live-in-Labs® program. The project includes applied research in the geographical distribution of water contaminants, filtration techniques and processes, awareness programs, and community empowerment strategies.</p>
+            
+        </section>
+        
+<!--    Our logo section show hows to use the semantic elements figure and figcaption-->
+        <section>
+            
+            <header id="logo">
+                <h2>Logo</h2>
+            </header>
+            
+            <figure>
+                <img src="https://www.amrita.edu/sites/default/files/basic_images/amrita-center-for-international-about-banner-1.jpg" alt="Live in labs">
+                <figcaption>Fig1. - lIVE IN LABS</figcaption>
+            </figure>
+            
+        </section>
+        
+<!--Our references section concludes the main content of this page-->
+        <section>
+            
+            <header id="ref">
+                <h2>References</h2>
+            </header>
+            
+            <p>Contents of this sample have been adapted from the <a href="https://www.amrita.edu/international/live-in-labs" target="_blank">Amrita live in labs</a>
+            </p>
+            
+        </section>
+        
+    </main>
+
+<!--Our global footer where you would typically specify copyright, author, contact info and a footer navigation bar-->
+    <footer>
+        <p>Copyrights information...</p>
+<!--        We show our authors and contact details using the details and summary elements. Expand to show content. -->
+        <details>
+            <summary>Authors</summary>
+            <p>Pruthvi</p>
+        </details>
+        <details>
+            <summary>Contact</summary>
+<!--            Using nav within summary element-->
+            <nav>
+<!--                Styling has been added to make nav menu in a horizontal row-->
+                <ul style="margin: 0; padding: 0; list-style-type: none;">
+                    <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">email</a></li>
+                    <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">twitter</a></li>
+                    <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">facebook</a></li>
+                    <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">GitHub</a></li>
+                </ul>
+            </nav>
+        </details>
+    </footer>
+
 </body>
+
 </html>
